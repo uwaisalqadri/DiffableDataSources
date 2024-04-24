@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VideoCategoryCell" customModule="DiffableDataSources" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="185"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="204" height="185"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arkit" translatesAutoresizingMaskIntoConstraints="NO" id="OZm-3n-RbX">
+                        <rect key="frame" x="10" y="10" width="184" height="165"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OZm-3n-RbX" secondAttribute="trailing" constant="10" id="Jui-Gl-Tjq"/>
+                <constraint firstItem="OZm-3n-RbX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="fbU-Th-1aB"/>
+                <constraint firstItem="OZm-3n-RbX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="v7R-k8-bcE"/>
+                <constraint firstAttribute="bottom" secondItem="OZm-3n-RbX" secondAttribute="bottom" constant="10" id="x2i-Tq-qjS"/>
+            </constraints>
+            <size key="customSize" width="204" height="185"/>
+            <connections>
+                <outlet property="imgThumbnail" destination="OZm-3n-RbX" id="u6s-Xm-WBo"/>
+            </connections>
+            <point key="canvasLocation" x="137.40458015267174" y="67.25352112676056"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arkit" width="560" height="423"/>
+    </resources>
+</document>
